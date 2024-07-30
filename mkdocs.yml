@@ -1,0 +1,53 @@
+site_name: Sigmapedia
+site_url: https://sigmism.surge.sh/sigmapedia
+theme:
+  name: 'material'
+  font:
+    text: Poppins
+    code: Kode Mono
+  palette:
+      # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  logo: assets/sigma.png
+  favicon: assets/sigma.png
+  markdown_extensions:
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.prune
+    - navigation.indexes
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+extra:
+  generator: false
+  consent:
+    title: Cookie consent
+    description:
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our wiki and whether our Siglers
+      find what they're searching for. With your consent, you're helping us to
+      make our wiki and our religion better.
+plugins:
+  - privacy
+  - search
