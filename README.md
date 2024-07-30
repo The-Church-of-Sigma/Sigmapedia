@@ -17,8 +17,6 @@ Separate with line breaks, even if they aren't like that. You'll see...
 
 ***Want bold and italic? Use 3 of them***
 
-_and surround with underscores to underline things_
-
 # Put a hash and then a space before text for a big heading
 
 ## Want a smaller subheading? Use two hashes
@@ -30,11 +28,11 @@ _and surround with underscores to underline things_
 ![For images, link to the file path with a ! before the square bracket. If you don't know this, tell me and I'll deal with it later](./docs/assets/sigma.png)
 
  - lists have a space, a - or *, then another space and the content
-  - you can indent with an extra space
+   - you can indent with two extra spaces
 
 1. You can also have...
 2. Numbered lists!
- 1. No space at the start for normal items but there are for indentations
+  1. No space at the start for normal items but there are for indentations
 ```
 If you want to see what the above looks like in markdown:
 
@@ -48,8 +46,6 @@ Separate with line breaks, even if they aren't like that. You'll see...
 
 ***Want bold and italic? Use 3 of them***
 
-_and surround with underscores to underline things_
-
 # Put a hash and then a space before text for a big heading
 
 ## Want a smaller subheading? Use two hashes
@@ -61,8 +57,8 @@ _and surround with underscores to underline things_
 ![For images, link to the file path with a ! before the square bracket. If you don't know this, tell me and I'll deal with it later](./docs/assets/sigma.png)
 
  - lists have a space, a - or *, then another space and the content
-  - you can indent with an extra space
+   - you can indent with two extra spaces
 
 1. You can also have...
 2. Numbered lists!
- 1. No space at the start for normal items but there are for indentations
+  1. No space at the start for normal items but there are for indentations
