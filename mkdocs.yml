@@ -25,7 +25,7 @@ theme:
       # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: teal
+      primary: green
       accent: deep purple
       toggle:
         icon: material/brightness-7 
