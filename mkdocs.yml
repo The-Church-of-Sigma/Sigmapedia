@@ -1,7 +1,11 @@
 site_name: Sigmapedia
 site_url: https://sigmism.surge.sh/sigmapedia
+repo_url: https://github.com/The-Church-of-Sigma/Sigmapedia/
+repo_name: Sigmapedia GitHub Repo
+edit_uri: edit/main/docs/
 nav:
   - Welcome!: index.md
+
   - Concepts & Terms: 
     - concepts/index.md
     - Meta: 
@@ -13,6 +17,7 @@ nav:
   
 theme:
   name: 'material'
+  custom_dir: overrides
   font:
     text: Poppins
     code: Kode Mono
@@ -48,6 +53,9 @@ theme:
     - search.suggest
     - search.highlight
     - search.share
+    - content.action.edit
+  icon:
+    repo: fontawesome/brands/github
 extra:
   generator: false
   consent:
@@ -58,8 +66,9 @@ extra:
       find what they're searching for. With your consent, you're helping us to
       make our wiki and our religion better.
 plugins:
-  - privacy
   - search
+  - git-revision-date-localized:
+      type: date
 markdown_extensions:
   - attr_list
   - md_in_html

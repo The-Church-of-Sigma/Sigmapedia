@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # Baby Gronk
 
 "As I drank, I felt a surge of power and freedom that I had never known before. In that moment, I became Baby Gronk, Skibidi’s loyal disciple."

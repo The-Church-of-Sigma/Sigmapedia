@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # Welcome to the Sigmapedia!
 
 This is a wiki on all of our W ∑ beliefs. The Church of Sigma highly suggests reading through a few important articles in this wiki to better understand the world of Sigmism. We hope you enjoy.
