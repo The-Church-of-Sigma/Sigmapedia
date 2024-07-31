@@ -129,7 +129,7 @@ _You **can** combine them_
 
 ## Images
 
-![This is a description of the image, appearing when the image can't be loaded.](./docs/sigma.png)
+![This is a description of the image, appearing when the image can't be loaded.](./docs/assets/sigma.png)
 
 ## Links
 
