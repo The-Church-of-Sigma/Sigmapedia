@@ -2,7 +2,7 @@
 
 This is a wiki on all of our W ∑ beliefs. The Church of Sigma highly suggests reading through a few important articles in this wiki to better understand the world of Sigmism. We hope you enjoy.
 
-For the full list of articles, check out the sidebar. Or for some interesting key articles, see the list below.
+For the full list of articles, check out the sidebar. Or for some of the most important interesting articles, see the list below.
 
 ## Key articles
 

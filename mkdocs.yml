@@ -1,5 +1,16 @@
 site_name: Sigmapedia
 site_url: https://sigmism.surge.sh/sigmapedia
+nav:
+  - Welcome!: index.md
+  - Concepts & Terms: 
+    - concepts/index.md
+    - Meta: 
+      - concepts/meta/index.md
+      - Sigmapedia: concepts/meta/sigmapedia.md
+
+  - Entities & People:
+    - Baby Gronk: entities/baby-gronk.md
+  
 theme:
   name: 'material'
   font:
@@ -9,7 +20,7 @@ theme:
       # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: indigo
+      primary: teal
       accent: deep purple
       toggle:
         icon: material/brightness-7 
@@ -18,7 +29,7 @@ theme:
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: indigo
+      primary: teal
       accent: deep purple
       toggle:
         icon: material/brightness-4
@@ -27,8 +38,6 @@ theme:
   favicon: assets/sigma.png
   markdown_extensions:
   features:
-    - navigation.tabs
-    - navigation.tabs.sticky
     - navigation.sections
     - navigation.expand
     - navigation.path
