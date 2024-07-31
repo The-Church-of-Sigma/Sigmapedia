@@ -14,61 +14,149 @@ Thanks for contributing to the Sigmapedia! Let's turn some Ls into Ws here.
 ## Editing
 Here, everything is in markdown. Markdown is easy, you probably use it every day without realising. Discord messages are just a stripped down version of markdown. It's just text.
 
-### Basic Markdown Guide
-This isn't much but should be enough to get you started.
+# Markdown syntax guide
+
+It's pretty simple. You can type text and it just works normally. If you want to get fancy you can include the stuff below. If you have problems, tell me and I'll deal with them...
+
 ```
-You can type text like normal. If you don't know anything I'll fix and spice it up later.
 
-Separate with line breaks, even if they aren't like that. You'll see...
+## Headers
 
-*Surround words with asterisks to make them italic*
+# This is a Heading h1
+## This is a Heading h2
+###### This is a Heading h6
 
-**And double asterisks for bold**
+## Emphasis
 
-***Want bold and italic? Use 3 of them***
+*This text will be italic*  
+_This will also be italic_
 
-# Put a hash and then a space before text for a big heading
+**This text will be bold**  
+__This will also be bold__
 
-## Want a smaller subheading? Use two hashes
+_You **can** combine them_
 
-### and keep adding hashes for smaller headings
+## Lists
 
-[Text for a link goes in square parentheses and the url in normal ones after it with no space between](https://github.com/The-Church-of-Sigma/Sigmapedia)
+### Unordered
+(Put a space before and after the *, - works too instead of *)
+* Item 1
+* Item 2
+* Item 2a
+* Item 2b
 
-![For images, link to the file path with a ! before the square bracket. If you don't know this, tell me and I'll deal with it later](./docs/assets/sigma.png)
+### Ordered
 
- - lists have a space, a - or *, then another space and the content
-   - you can indent with two extra spaces
+1. Item 1
+2. Item 2
+3. Item 3
+    1. Item 3a
+    2. Item 3b
 
-1. You can also have...
-2. Numbered lists!
-  1. No space at the start for normal items but there are for indentations. Not sure about this one (indentation)
+ - Indent lists with
+    - tabs or 4 spaces
+
+## Images
+
+![They're links, but to the file and with a ! before them. This is a description of the image, appearing when the image can't be loaded.](./docs/assets/sigma.png)
+
+## Links
+
+Links go inside [square brackets for the text and the url in normal parentheses after, with no space in between](https://sigmism.surge.sh/).
+
+## Blockquotes
+
+> "As I drank, I felt a surge of power and freedom that I had never known before. In that moment, I became Baby Gronk, Skibidi’s loyal disciple."
+>> You can also indent blockquotes with two blocks.
+
+## Tables
+
+| Left columns  | Right columns |
+| ------------- | --------------|
+| left foo      | right foo     |
+| left bar      | right bar     |
+| left baz      | right baz     |
+
+## Blocks of code or unformatted text
+
+\```
+let message = 'Hello world! Surround multiline blocks of code with ```s';
+alert(message);
+\```
+
+## Inline code
+
+Surrounded with one backtick for `code like this`.
 ```
-If you want to see what the above looks like in markdown:
 
-You can type text like normal. If you don't know anything I'll fix and spice it up later.
+Now let's see what that text looks like in markdown:
 
-Separate with line breaks, even if they aren't like that. You'll see...
+## Headers
 
-*Surround words with asterisks to make them italic*
+# This is a Heading h1
+## This is a Heading h2
+###### This is a Heading h6
 
-**And double asterisks for bold**
+## Emphasis
 
-***Want bold and italic? Use 3 of them***
+*This text will be italic*  
+_This will also be italic_
 
-# Put a hash and then a space before text for a big heading
+**This text will be bold**  
+__This will also be bold__
 
-## Want a smaller subheading? Use two hashes
+_You **can** combine them_
 
-### and keep adding hashes for smaller headings
+## Lists
 
-[Text for a link goes in square parentheses and the url in normal ones after it with no space between](https://github.com/The-Church-of-Sigma/Sigmapedia)
+### Unordered
+(Put a space before and after the *, - works too instead of *)
+* Item 1
+* Item 2
+* Item 2a
+* Item 2b
 
-![For images, link to the file path with a ! before the square bracket. If you don't know this, tell me and I'll deal with it later](./docs/assets/sigma.png)
+### Ordered
 
- - lists have a space, a - or *, then another space and the content
-   - you can indent with two extra spaces
+1. Item 1
+2. Item 2
+3. Item 3
+    1. Item 3a
+    2. Item 3b
 
-1. You can also have...
-2. Numbered lists!
-  1. No space at the start for normal items but there are for indentations. Not sure about this one (indentation)
+ - Indent lists with
+    - tabs or 4 spaces
+
+## Images
+
+![This is a description of the image, appearing when the image can't be loaded.](./docs/sigma.png)
+
+## Links
+
+Links go inside [square brackets for the text and the url in normal parentheses after, with no space in between](https://sigmism.surge.sh/).
+
+## Blockquotes
+
+> "As I drank, I felt a surge of power and freedom that I had never known before. In that moment, I became Baby Gronk, Skibidi’s loyal disciple."
+>> You can also indent blockquotes with two blocks.
+
+## Tables
+
+| Left columns  | Right columns |
+| ------------- | --------------|
+| left foo      | right foo     |
+| left bar      | right bar     |
+| left baz      | right baz     |
+
+## Blocks of code or unformatted text
+
+```
+let message = 'Hello world! Surround multiline blocks of code with ```s';
+alert(message);
+```
+
+## Inline code
+
+Surrounded with one backtick for `code like this`.
+
+
