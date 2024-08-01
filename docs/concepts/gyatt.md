@@ -1,7 +1,7 @@
 ---
 comments: true
 ---
-#Gyatt
+# Gyatt
 
 A "Gyatt" is the sigma word for backside, and typically refers to females. Gyatts are categorised by levels, with a "level 10 gyatt" being the highest.
 
