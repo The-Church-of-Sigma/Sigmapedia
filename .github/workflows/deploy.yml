@@ -3,7 +3,7 @@ name: Deploy MkDocs to website repo
 on:
   push:
     branches:
-      - prod
+      - main
 
 jobs:
   build-and-deploy:
