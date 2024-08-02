@@ -11,9 +11,24 @@ nav:
     - Meta: 
       - concepts/meta/index.md
       - Sigmapedia: concepts/meta/sigmapedia.md
+    - Among Us: concepts/among-us.md
+    - Fire in the Hole: concepts/fire-in-the-hole.md
+    - Goofy: concepts/goofy.md
+    - Gyatt: concepts/gyatt.md
+    - Mewing: concepts/mewing.md
+    - Rizz: concepts/rizz.md
 
   - Entities & People:
     - Baby Gronk: entities/baby-gronk.md
+
+  - Places:
+    - places/index.md
+
+  - Scriptures:
+    - scriptures/index.md
+
+  - Traditions & Conventions:
+    - traditions/index.md
   
 theme:
   name: 'material'
@@ -48,6 +63,8 @@ theme:
     - navigation.path
     - navigation.prune
     - navigation.indexes
+    - navigation.tabs
+    - navigation.tabs.sticky
     - toc.integrate
     - navigation.top
     - search.suggest
