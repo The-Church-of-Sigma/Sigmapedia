@@ -15,6 +15,10 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Get the commit message
+        id: get_commit_message
+        run: echo "COMMIT_MESSAGE=$(git log -1 --pretty=%B)" >> $GITHUB_ENV
+
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
@@ -35,6 +39,9 @@ jobs:
           path: website-repo
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
 
+      - name: Create target directory if it doesn't exist
+        run: mkdir -p website-repo/sigmapedia
+
       - name: Copy the built site
         run: |
           rm -rf website-repo/sigmapedia/*
@@ -46,7 +53,7 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add .
-          git commit -m "Deploy Sigmapedia from separate repo"
+          git commit -m "Sigmapedia: ${{ env.COMMIT_MESSAGE }}"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
