@@ -8,18 +8,19 @@ nav:
 
   - Concepts & Terms: 
     - concepts/index.md
-    - Meta: 
-      - concepts/meta/index.md
-      - Sigmapedia: concepts/meta/sigmapedia.md
     - Among Us: concepts/among-us.md
     - Fire in the Hole: concepts/fire-in-the-hole.md
     - Goofy: concepts/goofy.md
     - Gyatt: concepts/gyatt.md
     - Mewing: concepts/mewing.md
     - Rizz: concepts/rizz.md
+    - Meta: 
+      - concepts/meta/index.md
+      - Sigmapedia: concepts/meta/sigmapedia.md
 
   - Entities & People:
     - Baby Gronk: entities/baby-gronk.md
+    - DaFuq!?Boom!: entities/dafuq-boom.md
 
   - Places:
     - places/index.md
