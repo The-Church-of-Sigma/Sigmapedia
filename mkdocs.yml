@@ -82,6 +82,7 @@ extra:
       as to measure the effectiveness of our wiki and whether our Siglers
       find what they're searching for. With your consent, you're helping us to
       make our wiki and our religion better.
+  homepage: https://sigmism.surge.sh
 plugins:
   - search
   - git-revision-date-localized:
