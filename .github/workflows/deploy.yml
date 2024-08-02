@@ -17,7 +17,9 @@ jobs:
 
       - name: Get the commit message
         id: get_commit_message
-        run: echo "COMMIT_MESSAGE=$(git log -1 --pretty=%B)" >> $GITHUB_ENV
+        run: |
+          COMMIT_MESSAGE=$(git log -1 --pretty=%B | head -n 1)
+          echo "COMMIT_MESSAGE=$(echo $COMMIT_MESSAGE | base64)" >> $GITHUB_ENV
 
       - name: Set up Python
         uses: actions/setup-python@v2
@@ -52,8 +54,9 @@ jobs:
           cd website-repo
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          COMMIT_MESSAGE=$(echo ${{ env.COMMIT_MESSAGE }} | base64 --decode || echo "Update Sigmapedia")
           git add .
-          git commit -m "Sigmapedia: ${{ env.COMMIT_MESSAGE }}"
+          git commit -m "Sigmapedia: $COMMIT_MESSAGE"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
