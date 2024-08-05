@@ -1,7 +1,7 @@
 site_name: Sigmapedia
 site_url: https://sigmism.surge.sh/sigmapedia
 repo_url: https://github.com/The-Church-of-Sigma/Sigmapedia/
-repo_name: Sigmapedia GitHub Repo
+repo_name: Sigmapedia GyattHub Repo
 edit_uri: edit/main/docs/
 nav:
   - Welcome!: index.md
