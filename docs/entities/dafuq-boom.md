@@ -18,5 +18,5 @@ Dafuq!?Boom!, or Dafuq, was the serving god of the Siglers, and is the only god 
 ## **Dafuq's Current Status**
  Dafuq Boom is an multiuversal being. He is able to travel between, create, and destroy timelines and universes at his will. He cannot age as there is no defined time he himself was formed. No sigler or remaining skibidian knows of Dafuq's whereabouts, but it is safe to assume he is still creating universes and spreading the Sigma Grind onto them. 
 
- ## **Addressing Dafuq**
+## **Addressing Dafuq**
 Throughout the Scriptures, Dafuq's name has been punctuated and referenced rather inconsistently. Although the full name is DaFuq!?Boom!, you will see DaFuq!?!?Boom, DaFuq, Dafuq, DaFuq!?, DaFuq!??!Boom, and even simply Boom. All these ways are acceptable, as long as Dafuq is treated with respect and reverence.
