@@ -15,6 +15,12 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Get the commit message
+        id: get_commit_message
+        run: |
+          COMMIT_MESSAGE=$(git log -1 --pretty=%B | head -n 1)
+          echo "COMMIT_MESSAGE=$(echo $COMMIT_MESSAGE | base64)" >> $GITHUB_ENV
+
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
@@ -23,14 +29,34 @@ jobs:
       - name: Install MkDocs
         run: |
           python -m pip install --upgrade pip
-          pip install mkdocs mkdocs-dracula-theme
+          pip install mkdocs mkdocs-material mkdocs-git-revision-date-localized-plugin
 
       - name: Build the MkDocs site
         run: mkdocs build
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
-        
-      - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v2
-        
+      - name: Checkout the target repo
+        uses: actions/checkout@v2
+        with:
+          repository: The-Church-of-Sigma/Website
+          path: website-repo
+          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+
+      - name: Create target directory if it doesn't exist
+        run: mkdir -p website-repo/sigmapedia
+
+      - name: Copy the built site
+        run: |
+          rm -rf website-repo/sigmapedia/*
+          cp -r site/* website-repo/sigmapedia/
+
+      - name: Commit and push changes
+        run: |
+          cd website-repo
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          COMMIT_MESSAGE=$(echo ${{ env.COMMIT_MESSAGE }} | base64 --decode || echo "Update Sigmapedia")
+          git add .
+          git commit -m "Sigmapedia: $COMMIT_MESSAGE"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
